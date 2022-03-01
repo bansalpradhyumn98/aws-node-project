@@ -11,7 +11,7 @@ module.exports.getToken = async (event) => {
   console.log('Braintree Developer API');
 
   console.log("event.body ", event.body);
-  
+  //abs
   const params = JSON.parse(event.body);
   console.log('JSON.parse(event.body) --> ', params);
   const amount = params.amount != null &&  params.amount != '' ? params.amount : '';
